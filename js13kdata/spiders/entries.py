@@ -6,7 +6,7 @@ class EntriesSpider(scrapy.Spider):
     name = 'entries'
     allowed_domains = ['js13kgames.com']
     start_urls = [
-        'https://js13kgames.com/entries/2018'
+        'https://js13kgames.com/entries'
     ]
 
     def parse(self, response):
