@@ -21,7 +21,7 @@ class EntriesSpider(scrapy.Spider):
                 'title': response.css('div.info > h2::text').get(),
                 'author': response.css('div.info > h3::text').get(),
                 'description': response.css('div.description > p').get(),
-                'category': response.css('div.description > strong::text').re(r"(desktop|mobile|server|webxr)"),
+                'category': response.css('div.description > strong::text').re(r"(desktop|mobile|server|webxr|web monetization)"),
                 'image': response.css('article.single-entry > img::attr(src)').get()
             }
         }
